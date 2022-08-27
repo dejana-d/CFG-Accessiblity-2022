@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h2>LOGO / CONSISTENT NAVBAR</h2>
+
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
+<button class="tablink" onclick="openPage('Woman', this, '#e2d8cc')" id="defaultOpen">Women</button>
+<button class="tablink" onclick="openPage('Man', this, '#b4c8da')" >Men</button>
+<button class="tablink" onclick="openPage('Home', this, '#ffe1d0')">Home</button>
+<button class="tablink" onclick="openPage('Beauty', this, '#f3d9e8')">Beauty</button>
+
+<div id="Woman" class="tabcontent">
+
+
+    <div class="sidenav" id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')">View All</button>
+      <button class="btn" onclick="filterSelection('newarrivals')">New Arrivals</button>
+      <button class="btn" onclick="filterSelection('dresses')">Dresses</button>
+      <button class="btn" onclick="filterSelection('tops')">Tops</button>
+      <button class="btn" onclick="filterSelection('trousers')">Trousers</button>
+      <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
+    </div>
+
+    <div class="container row">
+      <div class="filterDiv column newarrivals">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name
+          <span><i style='font-size:24px' class='far'>&#xf004;</i></span>
+        </figcaption>
+        
+      </div>
+      <div class="filterDiv column trousers tops">
+        <img
+          src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+
+      </div>
+      <div class="filterDiv column newarrivals">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+
+      </div>
+      <div class="filterDiv column trousers">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+
+      </div>
+      <div class="filterDiv column newarrivals dresses">
+        <img
+          src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+      </div>
+      <div class="filterDiv column trousers">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+      </div>
+      <div class="filterDiv column dresses">
+        <img
+        src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+        style="width: 100%"
+      />
+      <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+      </div>
+      <div class="filterDiv column dresses">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+      </div>
+      <div class="filterDiv column tops">
+        <img
+          src="https://static.zara.net/photos///2022/I/0/1/p/8693/363/500/2/w/808/8693363500_2_1_1.jpg?ts=1661343614062"
+          style="width: 100%"
+        />
+        <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption>
+      </div>
+      <div class="filterDiv column shoes"><img
+        src="https://static.zara.net/photos///2022/I/1/1/p/3108/010/040/2/w/808/3108010040_2_1_1.jpg?ts=1661325944366"
+        style="width: 100%"
+      />
+      <figcaption class="item">Item Name</figcaption>
+      <figcaption class="price">Price</figcaption>
+    </div>
+      <div class="filterDiv column newarrivals shoes">
+        <img
+        src="https://static.zara.net/photos///2022/I/1/1/p/3002/011/040/2/w/702/3002011040_1_1_1.jpg?ts=1661341352841"
+        style="width: 100%"
+      />
+      <figcaption class="item">Item Name</figcaption>
+        <figcaption class="price">Price</figcaption></div>
+      </div>
+    </div>
+
+    
+  
+</div>
+
+<div id="Man" class="tabcontent">
+  <h3>Man</h3>
+  <p>More products go here...</p> 
+</div>
+
+<div id="Home" class="tabcontent">
+    
+
+    <div class="row">
+     
+        <div class="column">
+          <img src="https://static.zarahome.net/8/photos4/2022/I/4/1/p/6235/401/500/6235401500_2_7_1.jpg?t=1656314118469" style="width:100%">
+     
+        </div>
+        <div class="column">
+          <img src="https://static.zarahome.net/8/photos4/2022/I/4/1/p/4277/413/802/4277413802_2_7_1.jpg?t=1658934486822" style="width:100%">
+      
+        </div>
+        <div class="column">
+            <img src="https://static.zarahome.net/8/photos4/2022/I/4/1/p/9292/213/402/9292213402_2_7_1.jpg?t=1654863671630" style="width:100%">
+           
+          </div>
+    
+      </div>
+</div>
+
+
+
+<div id="Beauty" class="tabcontent">
+  <h3>Beauty</h3>
+  <p>Beauty Beauty Beauty Beauty</p>
+</div>
+
+<script src="script.js"></script>
+   
+</body>
+</html> 
