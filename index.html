@@ -3,27 +3,36 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/175f6802c5.js" crossorigin="anonymous"></script>
+<link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 </head>
 <body>
+  
 <h2>LOGO / CONSISTENT NAVBAR</h2>
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
-<button class="tablink" onclick="openPage('Woman', this, '#e2d8cc')" id="defaultOpen">Women</button>
+<button class="tablink" onclick="openPage('Woman', this, '#e2d8cc')" >Women<span onclick="this.parentElement.style.display='none'" class="topright"></span></button>
 <button class="tablink" onclick="openPage('Man', this, '#b4c8da')" >Men</button>
 <button class="tablink" onclick="openPage('Home', this, '#ffe1d0')">Home</button>
 <button class="tablink" onclick="openPage('Beauty', this, '#f3d9e8')">Beauty</button>
 
-<div id="Woman" class="tabcontent">
 
+<div id="Woman" class="tabcontent">
+  
 
     <div class="sidenav" id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')">View All</button>
+      <button class="btn active" onclick="filterSelection('all')" id="defaultOpen">View All</button>
       <button class="btn" onclick="filterSelection('newarrivals')">New Arrivals</button>
       <button class="btn" onclick="filterSelection('dresses')">Dresses</button>
       <button class="btn" onclick="filterSelection('tops')">Tops</button>
       <button class="btn" onclick="filterSelection('trousers')">Trousers</button>
       <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
+      <hr>
+      <button class="btn" onclick="filterSelection('25')">Under £25</button>
+      <button class="btn" onclick="filterSelection('50')">Under £50</button>
+      <button class="btn" onclick="filterSelection('50')">Under 100</button>
     </div>
 
     <div class="container row">
@@ -32,18 +41,21 @@
           src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
           style="width: 100%"
         />
+        <!-- product name, heart icon, price -->
         <figcaption class="item">Item Name
-          <span><i style='font-size:24px' class='far'>&#xf004;</i></span>
-        </figcaption>
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
+       
         
       </div>
-      <div class="filterDiv column trousers tops">
+      <div class="filterDiv column trousers">
         <img
           src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
 
       </div>
       <div class="filterDiv column newarrivals">
@@ -51,8 +63,9 @@
           src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
 
       </div>
       <div class="filterDiv column trousers">
@@ -60,8 +73,9 @@
           src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
 
       </div>
       <div class="filterDiv column newarrivals dresses">
@@ -69,58 +83,65 @@
           src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
       </div>
       <div class="filterDiv column trousers">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
       </div>
       <div class="filterDiv column dresses">
         <img
         src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+      <figcaption class="item">Item Name
+        <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+      </figcaption><figcaption class="price">Price</figcaption>
       </div>
       <div class="filterDiv column dresses">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
       </div>
       <div class="filterDiv column tops">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/8693/363/500/2/w/808/8693363500_2_1_1.jpg?ts=1661343614062"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption>
+        <figcaption class="item">Item Name
+          <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+        </figcaption><figcaption class="price">Price</figcaption>
       </div>
       <div class="filterDiv column shoes"><img
         src="https://static.zara.net/photos///2022/I/1/1/p/3108/010/040/2/w/808/3108010040_2_1_1.jpg?ts=1661325944366"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name</figcaption>
-      <figcaption class="price">Price</figcaption>
+      <figcaption class="item">Item Name
+        <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+      </figcaption><figcaption class="price">Price</figcaption>
     </div>
       <div class="filterDiv column newarrivals shoes">
         <img
         src="https://static.zara.net/photos///2022/I/1/1/p/3002/011/040/2/w/702/3002011040_1_1_1.jpg?ts=1661341352841"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name</figcaption>
-        <figcaption class="price">Price</figcaption></div>
+      <figcaption class="item">Item Name
+        <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
+      </figcaption><figcaption class="price">Price</figcaption></div>
       </div>
     </div>
-
+  
     
   
 </div>

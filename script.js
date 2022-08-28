@@ -1,3 +1,4 @@
+// TAB NAVIGATION
 
 function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
@@ -21,6 +22,7 @@ document.getElementById("defaultOpen").click();
 
 
 
+// FILTER SYSTEM
       filterSelection("all");
       function filterSelection(c) {
         var x, i;
@@ -66,3 +68,15 @@ document.getElementById("defaultOpen").click();
         });
       }
     
+
+
+
+      // TOGGLE HEART ICON – https://stackoverflow.com/questions/51995844/is-possible-to-toggle-between-2-fontawesome-5-icons-regular-and-solid-using-jq
+      $('.heart').on('click',function() {
+        $(this).find("i").toggleClass("far fas selected-heart border-heart");
+      });
+
+
+ 
+
+      
