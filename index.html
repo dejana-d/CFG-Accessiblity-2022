@@ -10,13 +10,25 @@
 </head>
 <body>
   
-<h2>LOGO / CONSISTENT NAVBAR</h2>
+  <div class="navbar">
+    <a href="index.html" onclick="myFunction()">LOGO / CONSISTENT NAVBAR</a>
+  </div>
+
+
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
-<button class="tablink" onclick="openPage('Woman', this, '#e2d8cc')" >Women<span onclick="this.parentElement.style.display='none'" class="topright"></span></button>
-<button class="tablink" onclick="openPage('Man', this, '#b4c8da')" >Men</button>
-<button class="tablink" onclick="openPage('Home', this, '#ffe1d0')">Home</button>
-<button class="tablink" onclick="openPage('Beauty', this, '#f3d9e8')">Beauty</button>
+<button class="tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#e2d8cc')" >Women
+  <span onclick="this.parentElement.style.display='none'" class="topright"></span></button>
+<button class="tablink" onclick="myFunctionWomen(), openPage('Man', this, '#b4c8da')" >Men</button>
+<button class="tablink" onclick="myFunctionWomen(), openPage('Home', this, '#ffe1d0')">Home</button>
+<button class="tablink" onclick="myFunctionWomen(), openPage('Beauty', this, '#f3d9e8')">Beauty</button>
+
+<div id="imgHomepage">
+  <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-34-4//w/2504/IMAGE-landscape-fill-3cc3e561-2509-43f8-b497-ebdffe12311e-default_0.jpg?ts=1661418639520"
+  width="100%"/>
+</div>
+
+
 
 
 <div id="Woman" class="tabcontent">
@@ -30,115 +42,115 @@
       <button class="btn" onclick="filterSelection('trousers')">Trousers</button>
       <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
       <hr>
-      <button class="btn" onclick="filterSelection('25')">Under £25</button>
+      <button class="btn" onclick="filterSelection('30')">Under £30</button>
       <button class="btn" onclick="filterSelection('50')">Under £50</button>
-      <button class="btn" onclick="filterSelection('50')">Under 100</button>
+      <button class="btn" onclick="filterSelection('100')">Under £100</button>
     </div>
 
     <div class="container row">
-      <div class="filterDiv column newarrivals">
+      <div class="filterDiv column newarrivals trousers 50">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+          src="https://static.zara.net/photos///2022/I/0/1/p/3046/260/704/2/w/578/3046260704_1_1_1.jpg?ts=1661354779948"
           style="width: 100%"
         />
         <!-- product name, heart icon, price -->
-        <figcaption class="item">Item Name
+        <figcaption class="item">Culotte Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">47.99 GBP</figcaption>
        
         
       </div>
-      <div class="filterDiv column trousers">
+      <div class="filterDiv column trousers 30">
         <img
-          src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
+          src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/704/17/w/566/7901432704_1_1_1.jpg?ts=1647423487390"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">High Waist Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">29.99 GBP</figcaption>
 
       </div>
-      <div class="filterDiv column newarrivals">
+      <div class="filterDiv column newarrivals tops 30">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          src="https://static.zara.net/photos///2022/I/0/1/p/8693/363/500/2/w/784/8693363500_2_1_1.jpg?ts=1661343614062"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">High Neck Top
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">25.99 GBP</figcaption>
 
       </div>
-      <div class="filterDiv column trousers">
+      <div class="filterDiv column trousers 100">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+          src="https://static.zara.net/photos///2022/I/0/1/p/1478/934/330/2/w/566/1478934330_1_1_1.jpg?ts=1661339652433"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">Geometric Print High-Waist Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">79.99 GBP</figcaption>
 
       </div>
-      <div class="filterDiv column newarrivals dresses">
+      <div class="filterDiv column newarrivals dresses 100">
         <img
-          src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/800/17/w/1126/7901432800_1_1_1.jpg?ts=1647939266030"
+          src="https://static.zara.net/photos///2022/I/0/1/p/8621/522/251/2/w/578/8621522251_1_1_1.jpg?ts=1661343609093"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">Fitted Shirt Dress
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">55.99 GBP</figcaption>
       </div>
-      <div class="filterDiv column trousers">
+      <div class="filterDiv column trousers 50">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          src="https://static.zara.net/photos///2022/I/0/1/p/4387/240/500/2/w/784/4387240500_1_1_1.jpg?ts=1661505962848"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">Trousers with Lined Belt
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">32.99 GBP</figcaption>
       </div>
-      <div class="filterDiv column dresses">
+      <div class="filterDiv column dresses 50">
         <img
-        src="https://static.zara.net/photos///2022/I/0/1/p/1165/233/800/2/w/876/1165233800_1_1_1.jpg?ts=1657640828074"
+        src="https://static.zara.net/photos///2022/I/0/1/p/3666/194/070/2/w/784/3666194070_2_1_1.jpg?ts=1661349761263"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name
+      <figcaption class="item">Satin Animal Print Dress
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">Price</figcaption>
+      </figcaption><figcaption class="price">44.99 GBP</figcaption>
       </div>
-      <div class="filterDiv column dresses">
+      <div class="filterDiv column dresses 50">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/6873/105/800/2/w/1126/6873105800_1_1_1.jpg?ts=1660308584558"
+          src="https://static.zara.net/photos///2022/I/0/1/p/9878/179/084/2/w/566/9878179084_2_1_1.jpg?ts=1661353718798"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">Polka Dot Print Dress
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">32.99 GBP</figcaption>
       </div>
-      <div class="filterDiv column tops">
+      <div class="filterDiv column tops 30">
         <img
-          src="https://static.zara.net/photos///2022/I/0/1/p/8693/363/500/2/w/808/8693363500_2_1_1.jpg?ts=1661343614062"
+          src="https://static.zara.net/photos///2022/I/0/1/p/3666/175/307/2/w/784/3666175307_2_1_1.jpg?ts=1661354449588"
           style="width: 100%"
         />
-        <figcaption class="item">Item Name
+        <figcaption class="item">Knotted Satin Top
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">Price</figcaption>
+        </figcaption><figcaption class="price">24.99 GBP</figcaption>
       </div>
-      <div class="filterDiv column shoes"><img
+      <div class="filterDiv column shoes 30"><img
         src="https://static.zara.net/photos///2022/I/1/1/p/3108/010/040/2/w/808/3108010040_2_1_1.jpg?ts=1661325944366"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name
+      <figcaption class="item">Fabric High Heel Ankle Boots
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">Price</figcaption>
+      </figcaption><figcaption class="price">29.99 GBP</figcaption>
     </div>
-      <div class="filterDiv column newarrivals shoes">
+      <div class="filterDiv column newarrivals shoes 100">
         <img
-        src="https://static.zara.net/photos///2022/I/1/1/p/3002/011/040/2/w/702/3002011040_1_1_1.jpg?ts=1661341352841"
+        src="https://static.zara.net/photos///2022/I/1/1/p/3002/011/040/2/w/578/3002011040_1_1_1.jpg?ts=1661341352841"
         style="width: 100%"
       />
-      <figcaption class="item">Item Name
+      <figcaption class="item">Fabric Platform Knee-High Boots
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">Price</figcaption></div>
+      </figcaption><figcaption class="price">69.99 GBP</figcaption></div>
       </div>
     </div>
   
