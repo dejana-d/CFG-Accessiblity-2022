@@ -269,3 +269,11 @@ cursor: pointer;
 .textBanner{
   display: none;
 }
+
+/* TETST */
+
+.zoomText:hover{
+  font-size: 150%;
+  cursor: pointer;
+}
+
