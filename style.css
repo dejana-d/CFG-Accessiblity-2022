@@ -78,7 +78,7 @@ body > h1 {
 }
 
 #Woman {
-  background-color: #e2d8cc;
+  background-color: #faf9f8;
 }
 #Man {
   background-color: #b4c8da;
@@ -124,6 +124,7 @@ body > h1 {
   cursor: pointer;
   width: 80%;
   text-align: left;
+  margin-right: 0;
 }
 
 hr {
@@ -137,16 +138,15 @@ hr {
 }
 
 .btn.active {
-  /* background-color: rgb(119, 208, 255); */
-  color: black;
-  font-style: italic;
-  /* text-decoration: underline; */
-  border-bottom: 4px solid #1d70b8;
+  background-color: black;
+  color: white;
+  text-decoration: underline;
+
 }
 .sidenav {
   height: 100%;
   /* width: 200px; */
-  width: 12%;
+  width: 15%;
   z-index: 1;
   position: absolute;
   /* background-color: transparent; */
@@ -176,15 +176,16 @@ hr {
 }
 
 .item {
-  color: red;
+  color: black;
   text-align: left;
-  /* margin-top: -10px; */
   display: flex;
   justify-content: space-between;
   padding-right: 10px;
+
+  
 }
 .price {
-  color: red;
+  color: black;
   text-align: left;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -192,29 +193,17 @@ hr {
 
 /* heart icon */
 .border-heart {
-  color: red;
+  color: black;
   font-size: 21px;
 }
 .selected-heart {
-  color: red;
+  color: black;
   font-size: 22px;
 }
 
 .selected-heart :focus {
-  color: red;
+  color: black;
   font-size: 22px;
-}
-
-/* close tab button */
-/* Style the close button */
-.topright {
-  float: right;
-  cursor: pointer;
-  font-size: 28px;
-}
-
-.topright:hover {
-  color: red;
 }
 
 /* IMAGE SLIDESHOW */
@@ -273,7 +262,8 @@ cursor: pointer;
 /* TETST */
 
 .zoomText:hover{
-  font-size: 150%;
+  font-size: 120%;
   cursor: pointer;
+  
 }
 
