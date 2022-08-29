@@ -16,10 +16,8 @@
     <a href="index.html" onclick="myFunction()">LOGO / CONSISTENT NAVBAR</a>
   </div>
 
-
-
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
-<button class="tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#e2d8cc')" ><div class="zoomText">Women</div>
+<button class="tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#faf9f8')" ><div class="zoomText">Women</div>
   <span onclick="this.parentElement.style.display='none'" class="topright"></span></button>
 <button class="tablink" onclick="myFunctionWomen(), openPage('Man', this, '#b4c8da')" >Men</button>
 <button class="tablink" onclick="myFunctionWomen(), openPage('Home', this, '#ffe1d0')">Home</button>
@@ -29,13 +27,14 @@
   <!-- <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-34-4//w/2504/IMAGE-landscape-fill-3cc3e561-2509-43f8-b497-ebdffe12311e-default_0.jpg?ts=1661418639520"
   width="100%"/> -->
   <div class="w3-content" style="max-width:100%">
-    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-34-4//w/3360/IMAGE-landscape-fill-3cc3e561-2509-43f8-b497-ebdffe12311e-default_0.jpg?ts=1661418639520" style="width:100%">
+    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-34-4//w/3360/IMAGE-landscape-fill-3cc3e561-2509-43f8-b497-ebdffe12311e-default_0.jpg?ts=1661418639520" style="width:100%" alt="Woman wearing dark grey long, semi sheer blouse">
     
-    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-34-5//w/3360/IMAGE-landscape-fill-245edaff-a081-4151-8aa0-5a4297c5fd21-default_0.jpg?ts=1661426937081" style="width:100%">
     
-    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-beauty/subhome-xmedia-34-3//w/3360/IMAGE-landscape-fill-555c6ca1-93b4-4e77-a398-1f8b78460dd3-default_0.jpg?ts=1661419084742" style="width:100%">
+    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-basics/subhome-xmedia-34-5//w/3360/IMAGE-landscape-fill-245edaff-a081-4151-8aa0-5a4297c5fd21-default_0.jpg?ts=1661426937081" style="width:100%" alt="Woman wearing light yellow soft knit sweater">
+    
+    <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-beauty/subhome-xmedia-34-3//w/3360/IMAGE-landscape-fill-555c6ca1-93b4-4e77-a398-1f8b78460dd3-default_0.jpg?ts=1661419084742" style="width:100%" alt="Woman wearing red lipstick">
      
-     <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-34//w/3360/IMAGE-landscape-fill-04012559-b425-4b97-abeb-09aec1f59345-default_0.jpg?ts=1661419895724" style="width:100%">
+     <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-34//w/3360/IMAGE-landscape-fill-04012559-b425-4b97-abeb-09aec1f59345-default_0.jpg?ts=1661419895724" style="width:100%" alt="Woman wearing white platform ankle">
 
 </div>
 
@@ -61,126 +60,136 @@
   
 
     <div class="sidenav" id="myBtnContainer">
-      <button class="btn active" onclick="filterSelection('all')" id="defaultOpen">View All</button>
-      <button class="btn" onclick="filterSelection('newarrivals')">New Arrivals</button>
-      <button class="btn" onclick="filterSelection('dresses')">Dresses</button>
-      <button class="btn" onclick="filterSelection('tops')">Tops</button>
-      <button class="btn" onclick="filterSelection('trousers')">Trousers</button>
-      <button class="btn" onclick="filterSelection('shoes')">Shoes</button>
+      <button class="btn active zoomText" onclick="filterSelection('all')" id="defaultOpen">View All</button>
+      <button class="btn zoomText" onclick="filterSelection('newarrivals')">New Arrivals</button>
+      <button class="btn zoomText" onclick="filterSelection('dresses')">Dresses</button>
+      <button class="btn zoomText" onclick="filterSelection('tops')">Tops</button>
+      <button class="btn zoomText" onclick="filterSelection('trousers')">Trousers</button>
+      <button class="btn zoomText" onclick="filterSelection('shoes')">Shoes</button>
       <hr>
-      <button class="btn" onclick="filterSelection('30')">Under £30</button>
-      <button class="btn" onclick="filterSelection('50')">Under £50</button>
-      <button class="btn" onclick="filterSelection('100')">Under £100</button>
+      <button class="btn zoomText" onclick="filterSelection('30')">Under £30</button>
+      <button class="btn zoomText" onclick="filterSelection('50')">Under £50</button>
+      <button class="btn zoomText" onclick="filterSelection('100')">Under £100</button>
     </div>
 
     <div class="container row">
       <div class="filterDiv column newarrivals trousers 50">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/3046/260/704/2/w/578/3046260704_1_1_1.jpg?ts=1661354779948"
+          alt="Woman wearing camel culotte trousers"
           style="width: 100%"
         />
         <!-- product name, heart icon, price -->
-        <figcaption class="item"><div class="zoomText">Culotte Trousers</div>
+        <figcaption class="item zoomText">Culotte Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">47.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">47.99 GBP</figcaption>
        
         
       </div>
       <div class="filterDiv column trousers 30">
         <img
           src="https://static.zara.net/photos///2022/V/0/1/p/7901/432/704/17/w/566/7901432704_1_1_1.jpg?ts=1647423487390"
+          alt="Woman wearing camel high waist trousers"
           style="width: 100%"
         />
-        <figcaption class="item">High Waist Trousers
+        <figcaption class="item zoomText">High Waist Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">29.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">29.99 GBP</figcaption>
 
       </div>
       <div class="filterDiv column newarrivals tops 30">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/8693/363/500/2/w/784/8693363500_2_1_1.jpg?ts=1661343614062"
+          alt="Woman wearing green high neck top"
           style="width: 100%"
         />
-        <figcaption class="item">High Neck Top
+        <figcaption class="item zoomText">High Neck Top
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">25.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">25.99 GBP</figcaption>
 
       </div>
       <div class="filterDiv column trousers 100">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/1478/934/330/2/w/566/1478934330_1_1_1.jpg?ts=1661339652433"
+          alt="Woman wearing multi-coloured geometric print trousers"
           style="width: 100%"
         />
-        <figcaption class="item">Geometric Print High-Waist Trousers
+        <figcaption class="item zoomText">Geometric Print Trousers
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">79.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">79.99 GBP</figcaption>
 
       </div>
       <div class="filterDiv column newarrivals dresses 100">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/8621/522/251/2/w/578/8621522251_1_1_1.jpg?ts=1661343609093"
+          alt="Woman wearing white fitted shirt dress"
           style="width: 100%"
         />
-        <figcaption class="item">Fitted Shirt Dress
+        <figcaption class="item zoomText">Fitted Shirt Dress
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">55.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">55.99 GBP</figcaption>
       </div>
       <div class="filterDiv column trousers 50">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/4387/240/500/2/w/784/4387240500_1_1_1.jpg?ts=1661505962848"
+          alt="Woman wearing green trousers with lined belt"
           style="width: 100%"
         />
-        <figcaption class="item">Trousers with Lined Belt
+        <figcaption class="item zoomText">Trousers with Lined Belt
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">32.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">32.99 GBP</figcaption>
       </div>
       <div class="filterDiv column dresses 50">
         <img
         src="https://static.zara.net/photos///2022/I/0/1/p/3666/194/070/2/w/784/3666194070_2_1_1.jpg?ts=1661349761263"
+        alt="Woman wearing satin zebra animal print dress"
         style="width: 100%"
       />
-      <figcaption class="item">Satin Animal Print Dress
+      <figcaption class="item zoomText">Satin Animal Print Dress
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">44.99 GBP</figcaption>
+      </figcaption><figcaption class="price zoomText">44.99 GBP</figcaption>
       </div>
       <div class="filterDiv column dresses 50">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/9878/179/084/2/w/566/9878179084_2_1_1.jpg?ts=1661353718798"
+          alt="Woman wearing black and white polka dot print dress"
           style="width: 100%"
         />
-        <figcaption class="item">Polka Dot Print Dress
+        <figcaption class="item zoomText">Polka Dot Print Dress
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">32.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">32.99 GBP</figcaption>
       </div>
       <div class="filterDiv column tops 30">
         <img
           src="https://static.zara.net/photos///2022/I/0/1/p/3666/175/307/2/w/784/3666175307_2_1_1.jpg?ts=1661354449588"
+          alt="Woman wearing champagne knotted satin top"
           style="width: 100%"
         />
-        <figcaption class="item">Knotted Satin Top
+        <figcaption class="item zoomText">Knotted Satin Top
           <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-        </figcaption><figcaption class="price">24.99 GBP</figcaption>
+        </figcaption><figcaption class="price zoomText">24.99 GBP</figcaption>
       </div>
       <div class="filterDiv column shoes 30"><img
         src="https://static.zara.net/photos///2022/I/1/1/p/3108/010/040/2/w/808/3108010040_2_1_1.jpg?ts=1661325944366"
+        alt="Woman wearing black fabric high heel ankle boots"
         style="width: 100%"
       />
-      <figcaption class="item">Fabric High Heel Ankle Boots
+      <figcaption class="item zoomText">Fabric High Heel Ankle Boots
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">29.99 GBP</figcaption>
+      </figcaption><figcaption class="price zoomText">29.99 GBP</figcaption>
     </div>
       <div class="filterDiv column newarrivals shoes 100">
         <img
         src="https://static.zara.net/photos///2022/I/1/1/p/3002/011/040/2/w/578/3002011040_1_1_1.jpg?ts=1661341352841"
+        alt="Woman wearing black fabric platform knee-high boots"
         style="width: 100%"
       />
-      <figcaption class="item">Fabric Platform Knee-High Boots
+      <figcaption class="item zoomText">Platform Knee-High Boots
         <span><div class="heart"><i class="far fa-heart border-heart"></i></div></span>
-      </figcaption><figcaption class="price">69.99 GBP</figcaption></div>
+      </figcaption><figcaption class="price zoomText">69.99 GBP</figcaption></div>
       </div>
     </div>
-  
-    
+ 
   
 </div>
 
@@ -190,7 +199,6 @@
 </div>
 
 <div id="Home" class="tabcontent">
-    
 
     <div class="row">
      
@@ -209,8 +217,6 @@
     
       </div>
 </div>
-
-
 
 <div id="Beauty" class="tabcontent">
   <h3>Beauty</h3>
