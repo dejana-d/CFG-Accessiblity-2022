@@ -30,6 +30,7 @@ body > h1 {
 }
 
 .navbar {
+  font-family: "Segoe UI",Arial,sans-serif;
   background-color: #f3d9e8;
   padding: 80px;
   margin-bottom: 0;
@@ -46,11 +47,12 @@ body > h1 {
 
 /* Style tab links */
 .tablink {
+  font-family: "Segoe UI",Arial,sans-serif;
   background-color: #fff8f0;
   color: rgb(36, 32, 32);
   float: left;
+ 
   /* border: none; */
-  border: none;
   border-color: transparent;
   outline: none;
   cursor: pointer;
@@ -67,6 +69,7 @@ body > h1 {
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
+  
   color: white;
   display: none;
   /* height: 100%; */
@@ -79,6 +82,7 @@ body > h1 {
 
 #Woman {
   background-color: #faf9f8;
+
 }
 #Man {
   background-color: #b4c8da;
@@ -129,7 +133,7 @@ body > h1 {
 
 hr {
   margin-left: 0;
-  width:80%;
+  width:60%;
   /* margin:0 auto; */
 }
 
@@ -138,9 +142,10 @@ hr {
 }
 
 .btn.active {
-  background-color: black;
+  background-color:  #181818;
   color: white;
   text-decoration: underline;
+  width: 60%;
 
 }
 .sidenav {
@@ -152,6 +157,7 @@ hr {
   /* background-color: transparent; */
   /* overflow-x: hidden; */
   padding-top: 20px;
+  margin-right: 0;
 }
 
 .column {
@@ -176,7 +182,7 @@ hr {
 }
 
 .item {
-  color: black;
+  color:  #181818;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -185,7 +191,7 @@ hr {
   
 }
 .price {
-  color: black;
+  color:  #181818;
   text-align: left;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -193,16 +199,16 @@ hr {
 
 /* heart icon */
 .border-heart {
-  color: black;
+  color:  #181818;
   font-size: 21px;
 }
 .selected-heart {
-  color: black;
+  color:  #181818;
   font-size: 22px;
 }
 
 .selected-heart :focus {
-  color: black;
+  color:  #181818;
   font-size: 22px;
 }
 
@@ -267,3 +273,83 @@ cursor: pointer;
   
 }
 
+.site-footer
+{
+  clear: both;
+  background-color:#26272b;
+  padding:65px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+
+/* FOOTER CONTENT */
+  /* Clear floats after the columns */
+  .ProjectRow:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+
+  .ProjectCol {
+    float: left;
+    width: 20%;
+    font-family: "Segoe UI",Arial,sans-serif;
+  }
+
+
+  .ProjectCol >h2{
+  color: #e4e4e4;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  }
+
+
+
+  body > footer > div > div > div > ul{
+    list-style: none;
+    padding-left:0;
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  body > footer > div > div > div > ul :hover{
+text-decoration: underline;
+cursor: pointer;
+  }
+
+
+  .social-icons > li{
+    display: inline;
+    list-style: none;
+   padding-right: 16px;
+    font-size: 1.3em;
+    color: #e4e4e4;
+  }
+
+
+  .social-icons > li :hover{
+    color: black;
+  }
+
+  body > footer > div > ul{
+    padding-left: 0;
+  }
+
+  body > footer > div > p{
+    font-size:15px;
+    line-height:24px;
+    color:#e4e4e4;
+  }
+
+  .location > li{
+    display: inline;
+    list-style: none;
+   padding-right: 16px;
+    font-size: 15px;
+    color: #e4e4e4;
+  }
