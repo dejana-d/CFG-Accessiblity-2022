@@ -58,8 +58,8 @@ body > h1 {
   color: rgb(36, 32, 32);
   float: left;
  
-  /* border: none; */
-  border-color: transparent;
+  border: none;
+
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -70,7 +70,11 @@ body > h1 {
 }
 
 .tablink:hover {
-  background-color: #777;
+  text-decoration: underline;
+}
+
+.tablink .active1{
+  color: red;
 }
 
 /* Style the tab content (and add height:100% for full page content) */
@@ -90,6 +94,8 @@ body > h1 {
   background-color: #faf9f8;
 
 }
+
+
 #Man {
   background-color: #b4c8da;
 }
@@ -100,7 +106,8 @@ body > h1 {
   background-color: #f3d9e8;
 }
 
-/*  */
+
+
 
 .filterDiv {
   /* background-color: #2196f3; */
@@ -154,6 +161,7 @@ hr {
   width: 60%;
 
 }
+
 .sidenav {
   height: 100%;
   /* width: 200px; */
@@ -228,11 +236,12 @@ hr {
 .prevNext{
 position: relative;
 /* margin-top: -35%; */
+
 margin-top: -10vh;
  display: flex;
  justify-content: space-between;
  padding: 0 16px;
-}
+} 
 
 .prevNext > button{
 background-color: transparent;
@@ -276,7 +285,6 @@ cursor: pointer;
 .zoomText:hover{
   font-size: 120%;
   cursor: pointer;
-  
 }
 
 .site-footer
@@ -303,21 +311,31 @@ cursor: pointer;
     float: left;
     width: 20%;
     font-family: "Segoe UI",Arial,sans-serif;
+    padding-left: 30px;
   }
 
 
   .ProjectCol >h2{
-  color: #e4e4e4;
+  color: #efeded;
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 2px;
   }
+  .ProjectCol li {
+    list-style: none;
+    margin-left: -40px;
+    color: #e4e4e4;
+    line-height: 30px;
+  }
 
+  .ProjectCol li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
 
 
   body > footer > div > div > div > ul{
-    list-style: none;
     padding-left:0;
     font-size: 16px;
     line-height: 30px;
@@ -336,10 +354,14 @@ cursor: pointer;
     font-size: 1.3em;
     color: #e4e4e4;
   }
+  .social-icons {
+    padding-left: 30px;
+  }
 
 
   .social-icons > li :hover{
-    color: black;
+    opacity: 0.5;
+    text-decoration: none;
   }
 
   body > footer > div > ul{
@@ -439,11 +461,40 @@ cursor: pointer;
 .navColumn > a:hover{
   text-decoration: underline;
 }
-
+.navColumn > li > span:hover{
+  text-decoration: underline;
+}
 /* Clear floats after the columns */
 .navRow:after {
   content: "";
   display: table;
   clear: both;
  
+}
+
+.copyright-text {
+  padding-left: 30px;
+  color: #e4e4e4;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 170px;
+  right: 250px;
+  background-color: #e4e4e4;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+
+
+
+
+/* Style the active class, and buttons on mouse-over */
+.active, .navlink:hover {
+  background-color: #666;
+  color: white;
 }

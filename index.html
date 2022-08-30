@@ -21,24 +21,31 @@
     <!-- TEST -->
     <div class="navRow">
       <div class="navColumn" style="text-align: left;">
-        <p>Some text</p>
+        <p>United Kingdom</p>
       </div>
       <div class="navColumn" style="text-align: center; font-size: 2em;">
-        <a href="index.html" onclick="myFunction()">*LOGO*</a>
+        <a href="index.html" onclick="myFunction()" class="zoomText">*LOGO*</a>
         
       </div>
       <div class="navColumn" style="text-align: right; padding-right: 30px; margin-top:10px;">
-        <li><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Sign In&nbsp; &nbsp; &nbsp;<i class="far fa-heart border-heart" style=" color: white;"></i>&nbsp;Favourites &nbsp; &nbsp; &nbsp;<i class="fa fa-shopping-bag" ></i>&nbsp;Bag (0)</li>
+        <li>
+          <span class="zoomText"><i class="fa fa-user zoomText" aria-hidden="true"></i>&nbsp;Sign In</span>&nbsp; &nbsp; &nbsp;
+          <span class="zoomText"><i class="far fa-heart border-heart" style=" color: white;"></i>&nbsp;Favourites</span>&nbsp; &nbsp; &nbsp;
+          <span class="zoomText"><i class="fa fa-shopping-bag" ></i>&nbsp;Bag (0)</span>
+        </li>
       </div>
     </div>
-
+  
 
 <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
-<button class="tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#faf9f8')" ><div class="zoomText">Women</div>
-  <span onclick="this.parentElement.style.display='none'" class="topright"></span></button>
-<button class="tablink" onclick="myFunctionWomen(), openPage('Man', this, '#b4c8da')" >Men</button>
-<button class="tablink" onclick="myFunctionWomen(), openPage('Home', this, '#ffe1d0')">Home</button>
-<button class="tablink" onclick="myFunctionWomen(), openPage('Beauty', this, '#f3d9e8')">Beauty</button>
+
+<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#181818')"><div class="zoomText">Women</div></button>
+<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Man', this, '#b4c8da')"><div class="zoomText">Men</div></button>
+<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Home', this, '#ffe1d0')"><div class="zoomText">Home</div></button>
+<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Beauty', this, '#f3d9e8')"><div class="zoomText">Beauty</div></button>
+
+
+
 
 <div id="imgHomepage">
   <!-- <img src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-new/subhome-xmedia-34-4//w/2504/IMAGE-landscape-fill-3cc3e561-2509-43f8-b497-ebdffe12311e-default_0.jpg?ts=1661418639520"
@@ -52,7 +59,10 @@
     <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-beauty/subhome-xmedia-34-3//w/3360/IMAGE-landscape-fill-555c6ca1-93b4-4e77-a398-1f8b78460dd3-default_0.jpg?ts=1661419084742" style="width:100%" alt="Woman wearing red lipstick">
      
      <img class="homepageImage" src="https://static.zara.net/photos///contents/mkt/spots/aw22-north-woman-shoes-bags/subhome-xmedia-34//w/3360/IMAGE-landscape-fill-04012559-b425-4b97-abeb-09aec1f59345-default_0.jpg?ts=1661419895724" style="width:100%" alt="Woman wearing white platform ankle">
-
+     <div class="text-block">
+      <h5>Long, semi sheer blouse</h5>
+      <p>45.99 GBP</p>
+    </div>
 </div>
 
 <div class="slideshowButtons">
@@ -242,7 +252,6 @@
 
 <!-- Site footer -->
 <footer class="site-footer">
-  <div class="container">
 
 
 <!-- TEST -->
@@ -251,10 +260,10 @@
   <div class="ProjectCol">
     <h2>Quick Links</h2>
     <ul>
-    <li>Find a Store</li>
-    <li>Gift Cards</li>
-    <li>Student Discount</li>
-    <li>Feedback</li>
+    <li class="zoomText">Find a Store</li>
+    <li class="zoomText">Gift Cards</li>
+    <li class="zoomText">Student Discount</li>
+    <li class="zoomText">Feedback</li>
   </ul>
   
     </div>
@@ -262,10 +271,10 @@
       <div class="ProjectCol">
   <h2>Get Help</h2>
   <ul>
-    <li>Order Status</li>
-    <li>Shipping and Delivery</li>
-    <li>Returns</li>
-    <li>Contact Us</li>
+    <li class="zoomText">Order Status</li>
+    <li class="zoomText">Shipping and Delivery</li>
+    <li class="zoomText">Returns</li>
+    <li class="zoomText">Contact Us</li>
   
   </ul>
     
@@ -275,7 +284,7 @@
       
 </div>
 
-    <hr>
+    <hr style="width: 100%;">
 
    
     <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by team-blackwhite.</p>
@@ -297,7 +306,6 @@
 
 
 
-  </div>
  
   
 </footer>
