@@ -10,6 +10,7 @@ html {
   font-family: Arial;
   padding-left: 16px;
   padding-right: 16px;
+  background-color: #181818;
   
 }
 
@@ -30,16 +31,21 @@ body > h1 {
 }
 
 .navbar {
+  
   font-family: "Segoe UI",Arial,sans-serif;
-  background-color: #f3d9e8;
+  background-color: #26272B;
+  color: #faf9f8;
   padding: 80px;
+  padding-top: 0px;
   margin-bottom: 0;
   margin-top: 0;
   text-align: center;
-  font-size: 40px;
+  font-size: 1.2em;
 }
 .navbar a {
   text-decoration: none;
+  font-size: 32px;
+  
 }
 .navbar a:hover {
   text-decoration: underline;
@@ -353,3 +359,91 @@ cursor: pointer;
     font-size: 15px;
     color: #e4e4e4;
   }
+
+
+  .topNavLinks{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-left: -50px;
+    background-color:  #26272B;
+    color: #e4e4e4;
+    margin: 0;
+    padding-top: 30px;
+    /* padding-bottom: -150px; */
+    padding-left: 30px;
+    padding-right: 30px;
+   
+  }
+
+  p.topNavLinks :hover{
+    text-decoration: underline;
+    margin-top: 0;
+    
+  }
+  body > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding:30px 30px;
+    background-color:  #26272B;
+    color: #e4e4e4;
+    margin-bottom: 0;
+  }
+
+  body > ul > li:nth-child(2) > a{
+    font-size: 2em;
+    text-decoration: none;
+  }
+
+ ul > li > a :hover{
+  
+    text-decoration: underline;
+  }
+
+  body > div.navbar >ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  div.navbar{
+    padding:30px 30px;
+  }
+
+
+  /* TEST */
+  /* Create three equal columns that floats next to each other */
+
+  .navRow{
+    padding: 30px 30px;
+    background-color:  #26272B;
+  }
+.navColumn {
+  float: left;
+  width: 33.33%;
+  /* padding: 30px; */
+  background-color:  #26272B;
+    color: #e4e4e4;
+    list-style: none;
+    /* font-size: 16px; */
+}
+
+.navColumn > a{
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.navColumn > a:hover{
+  text-decoration: underline;
+}
+
+/* Clear floats after the columns */
+.navRow:after {
+  content: "";
+  display: table;
+  clear: both;
+ 
+}
