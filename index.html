@@ -37,12 +37,15 @@
     </div>
   
 
-<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_full_page_tabs -->
+<!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs -->
 
-<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Woman', this, '#181818')"><div class="zoomText">Women</div></button>
-<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Man', this, '#b4c8da')"><div class="zoomText">Men</div></button>
-<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Home', this, '#ffe1d0')"><div class="zoomText">Home</div></button>
-<button class="navlink tablink" onclick="myFunctionWomen(), openPage('Beauty', this, '#f3d9e8')"><div class="zoomText">Beauty</div></button>
+<div class="tab">
+  <button class="tablinks tablink" onclick="openTab(event, 'Woman'), myFunctionWomen(), openPage('Woman', this)"><div class="zoomText">Women</div></button>
+  <button class="tablinks tablink" onclick="openTab(event, 'Man'), myFunctionWomen(), openPage('Man', this)"><div class="zoomText">Men</div></button>
+  <button class="tablinks tablink" onclick="openTab(event, 'Home'), myFunctionWomen(), openPage('Home', this)"><div class="zoomText">Home</div></button>
+  <button class="tablinks tablink" onclick="openTab(event, 'Beauty'), myFunctionWomen(), openPage('Beauty', this)"><div class="zoomText">Beauty</div></button>
+</div>
+
 
 
 

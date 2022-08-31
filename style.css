@@ -54,12 +54,9 @@ body > h1 {
 /* Style tab links */
 .tablink {
   font-family: "Segoe UI",Arial,sans-serif;
-  background-color: #faf9f8;
-  color: rgb(36, 32, 32);
   float: left;
  
   border: none;
-
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
@@ -69,13 +66,36 @@ body > h1 {
   padding-left: 30px;
 }
 
-.tablink:hover {
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
   text-decoration: underline;
 }
 
-.tablink .active1{
-  color: red;
+/* Create an active/current tablink class */
+.tab button.active1 {
+  background-color: black;
+  color: white;
 }
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+
 
 /* Style the tab content (and add height:100% for full page content) */
 .tabcontent {
@@ -493,8 +513,3 @@ cursor: pointer;
 
 
 
-/* Style the active class, and buttons on mouse-over */
-.active, .navlink:hover {
-  background-color: #666;
-  color: white;
-}
